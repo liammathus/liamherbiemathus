@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href='https://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+    <link rel="icon" href="sadie.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <style>
+   body {
+   background-image: url("contact.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   min-height: 100vh;
+   overflow: hidden;
+   margin: 0;
+   }
+ 
+   div.song {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   z-index: 999;
+   }
+
+   .hero {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   }
+
+   .booking-text {
+   position: absolute;
+   top: 25%;
+   left: 73%;
+   transform: translate(-50%, -50%);
+   color: white;
+   text-align: center;
+   font-family: 'Amethysta', sans-serif;
+   font-size: 20px;
+   width: 280px;
+   }
+
+   #img:hover,
+   #img:focus {
+   -webkit-animation-name: bounce;
+   animation-name: bounce;
+   -webkit-transform-origin: center bottom;
+   transform-origin: center bottom;
+   }
+ 
+   .home {
+   position: fixed;
+   top: 0px;
+   right: 20px;
+   z-index: 999;
+   }
+    
+   a:link { color: white; text-decoration: none; }
+   a:visited { color: white; }
+   a:hover { color: red; text-decoration: underline; }
+</style>
+</head>
+<body>
+ 
+<div class="song"> 
+<center>
+<audio id="audio" src="https://github.com/liammathus/music/raw/refs/heads/main/Splashing.mp3"></audio>
+<img id="img" src="cd19.gif" width=auto height=auto class="animate__animated">
+</center>
+ 
+<script>
+document.getElementById("img").addEventListener("click", function(){
+document.getElementById("audio").play();
+});
+</script>
+</div>
+<div class="hero">
+  
+  <p class="booking-text">
+    For Booking Inquiries:<br>
+    <br>
+    liammathus@proton.me
+  </p>
+</div>
+   <p class="home" style="font-size: 60px; font-family: Arizonia"><a href="index.html">Home</a></p>
+
+</body>
+
+</html>

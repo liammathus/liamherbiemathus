@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href='https://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+    <link rel="icon" href="sadie.png" type="image/png"> 
+     <style>
+    body {
+      background: #fffdf8
+    }
+    
+     h1 { 
+       margin: 0 auto;
+       max-width: 400px; 
+       text-align: center; 
+       font-family: 'Arizonia'; 
+       font-size: 80px; 
+       color: #000;
+    }
+
+    .photos {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .row1, .row2, .row3 {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .row2, .row3 {
+      margin-top: 50px;
+    }
+    .home {
+      text-align: center;
+    }
+    
+    a:link { color: black; text-decoration: none; }
+    a:visited { color: black; }
+    a:hover { color: red; text-decoration: underline; }
+  
+      </style>
+  </head>
+  <body>
+  <h1>Gallery</h1>
+  <div class="photos">
+  <div class="row1">
+    <img src="photos/2012.jpg" alt="ghost walker" width="500">
+    <img src="photos/2141.jpeg" alt="intimate gig photo" width="550">
+  </div>
+  <div class="row2">
+    <img src="photos/0047.jpg" alt="brooklyn bridge" width="600">
+    <img src="photos/3590.jpeg" alt="in nature" width="500">
+  </div>
+  <div class="row3">
+    <img src="photos/0944.jpeg" alt="close up eyes shot" width="600">
+  </div>
+</div>
+<br>
+<p class="home" style="font-size: 40px; font-family: Arizonia"><a href="index.html">Home</a></p>
+  </body>
+</html>
